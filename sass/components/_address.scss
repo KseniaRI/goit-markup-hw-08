@@ -1,0 +1,33 @@
+.address {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address__map {
+  color: $main-white-color;
+
+  transition: $transition-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__contact {
+  color: $trasparent-white-color;
+
+  transition: $transition-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}

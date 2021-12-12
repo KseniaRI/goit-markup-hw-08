@@ -1,0 +1,53 @@
+.staff {
+  background-color: $secondary-bg-color;
+
+  .staff__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+  .staff__item {
+    @media screen and (max-width: 767px) {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 2 * 30) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 4 * 30) / 4);
+      margin: 15px;
+    }
+  }
+
+  .staff__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  .staff__profession {
+    color: $main-text-color;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .staff__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $main-white-color;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  }
+}
