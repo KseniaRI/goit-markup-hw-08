@@ -42,11 +42,6 @@
   &:hover,
   &:focus {
     color: $accent-color;
-
-    @media screen and (max-width: 767px) {
-      font-size: 34px;
-      line-height: 1.18;
-    }
   }
 
   @media screen and (max-width: 767px) {
@@ -60,6 +55,13 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.14;
+  }
+
+  &--big {
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+      line-height: 1.18;
+    }
   }
 }
 .contacts__item:not(:first-child) {

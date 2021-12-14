@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/base';
 @import './components/header';
+@import './components/container';
 @import './components/logo';
 @import './components/nav';
 @import './components/contacts';
@@ -10,6 +11,7 @@
 @import './components/modal';
 @import './components/section';
 @import './components/features';
+@import './utils/hidden';
 @import './components/work';
 @import './components/staff';
 @import './components/social-list';
