@@ -1,7 +1,6 @@
 .nav {
-  display: flex;
+  @extend %flex-align-center;
   position: relative;
-  align-items: center;
   background-color: $main-white-color;
 
   .nav__list {

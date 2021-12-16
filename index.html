@@ -78,68 +78,10 @@
         <section class="hero">
             <div class="hero__content">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" data-modal-open class="button hero__button">Заказать услугу</button>
+                <button type="button" data-modal-open class="hero__button">Заказать услугу</button>
             </div>
         </section>
-        <!-- MODAL -->
-        <div data-modal class="backdrop is-hidden">
-            <div class="modal">
-                <button type="button" data-modal-close class="modal__close-button">
-                    <svg class="modal__close-icon">
-                        <use href="./images/svg/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <form class="contact-form">
-                    <b class="contact-form__appeal">Оставьте свои данные, мы вам перезвоним</b>
-                    <div class="contact-form__field">
-                        <label for="name" class="contact-form__label">Имя</label>
-                        <div class="contact-form__wrap">
-                            <input type="text" id="name" name="name" class="contact-form__input">
-                            <span class="contact-form__icon-place">
-                                <svg class="contact-form__icon">
-                                    <use href="./images/svg/symbol-defs.svg#icon-person"></use>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="contact-form__field">
-                        <label for="tel" class="contact-form__label">Телефон</label>
-                        <div class="contact-form__wrap">
-                            <input type="tel" id="tel" name="tel" class="contact-form__input">
-                            <span class="contact-form__icon-place">
-                                <svg class="contact-form__icon">
-                                    <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="contact-form__field">
-                        <label for="email" class="contact-form__label">Почта</label>
-                        <div class="contact-form__wrap">
-                            <input type="email" id="email" name="email" class="contact-form__input">
-                            <span class="contact-form__icon-place">
-                                <svg class="contact-form__icon">
-                                    <use href="./images/svg/symbol-defs.svg#icon-email"></use>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="contact-form__comment-field">
-                        <label for="comment" class="contact-form__label">Комментарий</label>
-                        <textarea name="comment" id="comment" placeholder="Введите текст" rows="10"
-                            class="contact-form__textarea"></textarea>
-                    </div>
-                    <div class="contact-form__agreement-field">
-                        <label class="contact-form__agreement-label">Соглашаюсь с рассылкой и принимаю
-                            <input type="checkbox" name="agreement" class="contact-form__check-input visually-hidden">
-                            <a href="" class="contact-form__link">Условия договора</a>
-                            <span class="contact-form__check-box"></span>
-                        </label>
-                    </div>
-                    <button type="submit" class="button contact-form__button">Отправить</button>
-                </form>
-            </div>
-        </div>
+       
         <!-- FEATURES -->
         <section class="section features">
             <div class="container">
@@ -517,7 +459,7 @@
                 <b class="footer__appeal">Подпишитесь на рассылку</b>
                 <div class="subscribe-form__field">
                     <input type="email" name="email" class="subscribe-form__input" placeholder="E-mail">
-                    <button type="submit" class="button subscribe-form__button">
+                    <button type="submit" class="subscribe-form__button">
                         Подписаться
                         <svg class="button__icon">
                             <use href="./images/svg/symbol-defs.svg#icon-send"></use>
@@ -528,6 +470,65 @@
 
         </div>
     </footer>
+    <!-- MODAL -->
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button type="button" data-modal-close class="modal__close-button">
+                <svg class="modal__close-icon">
+                    <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form class="contact-form">
+                <b class="contact-form__appeal">Оставьте свои данные, мы вам перезвоним</b>
+                <div class="contact-form__field">
+                    <label for="name" class="contact-form__label">Имя</label>
+                    <div class="contact-form__wrap">
+                        <input type="text" id="name" name="name" class="contact-form__input">
+                        <span class="contact-form__icon-place">
+                            <svg class="contact-form__icon">
+                                <use href="./images/svg/symbol-defs.svg#icon-person"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-form__field">
+                    <label for="tel" class="contact-form__label">Телефон</label>
+                    <div class="contact-form__wrap">
+                        <input type="tel" id="tel" name="tel" class="contact-form__input">
+                        <span class="contact-form__icon-place">
+                            <svg class="contact-form__icon">
+                                <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-form__field">
+                    <label for="email" class="contact-form__label">Почта</label>
+                    <div class="contact-form__wrap">
+                        <input type="email" id="email" name="email" class="contact-form__input">
+                        <span class="contact-form__icon-place">
+                            <svg class="contact-form__icon">
+                                <use href="./images/svg/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-form__comment-field">
+                    <label for="comment" class="contact-form__label">Комментарий</label>
+                    <textarea name="comment" id="comment" placeholder="Введите текст" rows="10"
+                        class="contact-form__textarea"></textarea>
+                </div>
+                <div class="contact-form__agreement-field">
+                    <label class="contact-form__agreement-label">Соглашаюсь с рассылкой и принимаю
+                        <input type="checkbox" name="agreement" class="contact-form__check-input visually-hidden">
+                        <a href="" class="contact-form__link">Условия договора</a>
+                        <span class="contact-form__check-box"></span>
+                    </label>
+                </div>
+                <button type="submit" class="contact-form__button">Отправить</button>
+            </form>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

@@ -1,6 +1,5 @@
 .filter {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flex-wrap;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
@@ -36,10 +35,7 @@
   color: $main-title-color;
   background-color: $secondary-bg-color;
   font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 1.62, 0.03em);
   cursor: pointer;
 
   transition: $transition-color;

@@ -1,14 +1,9 @@
-@mixin section($padding-top: 94px, $padding-bottom: 94px) {
-  padding-top: $padding-top;
-  padding-bottom: $padding-bottom;
-}
-
 .section {
   @media screen and (max-width: 1199px) {
     @include section(60px, 60px);
   }
   @media screen and (min-width: 1200px) {
-    @include section();
+    @include section(94px, 94px);
   }
   .section__title {
     text-align: center;

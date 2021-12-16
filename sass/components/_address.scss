@@ -1,10 +1,7 @@
 .address {
+  @include font(400, 14px, 1.71, 0.03em);
   margin-top: 20px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 .address__map {
   color: $main-white-color;

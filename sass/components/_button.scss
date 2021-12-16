@@ -1,18 +1,3 @@
-%button {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: $border-radius;
-  border-color: transparent;
-  min-width: 200px;
-  color: $main-white-color;
-  background-color: $accent-color;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-}
 .button__icon {
   margin-left: 10px;
   width: 24px;
@@ -31,8 +16,7 @@
 }
 .subscribe-form__button {
   @extend %button;
-  display: flex;
-  align-items: center;
+  @extend %flex-align-center;
   justify-content: center;
 
   @media screen and (max-width: 1199px) {
