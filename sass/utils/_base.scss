@@ -1,9 +1,9 @@
 body {
   font-family: Roboto, sans-serif;
   color: $main-text-color;
-  @media screen and (max-width: 320px) {
-    overflow-x: scroll;
-  }
+  // @media screen and (max-width: 320px) {
+  //   overflow-x: scroll;
+  // }
 }
 h2,
 h3 {
